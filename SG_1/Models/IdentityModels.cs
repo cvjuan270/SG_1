@@ -18,10 +18,18 @@ namespace IdentitySample.Models
         }
     }
 
+
+    public class ApplicationRole : IdentityRole
+    {
+        public ApplicationRole() : base() { }
+        public ApplicationRole(string name) : base(name) { }
+
+        //public string Descripcion { get; set; }
+    }
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("SG_1Context", throwIfV1Schema: false)
         {
         }
 
