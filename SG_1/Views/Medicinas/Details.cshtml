@@ -1,0 +1,106 @@
+﻿@model SG_1.Models.Medicina
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Medicina</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Atenciones.Local0)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Atenciones.Local0)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorIng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorIng)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorSal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorSal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Medico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aptitu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aptitu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecApt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecApt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecEnv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecEnv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alerta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alerta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
